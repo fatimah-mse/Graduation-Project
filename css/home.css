@@ -1,0 +1,334 @@
+*:root{
+    --red: #ff4848;
+    --yellow: #ffca0f;
+    --beige: #f1e8cd;
+    --dark-blue: #1263a1;
+    --hover-dark-blue: #034980;
+    --baby-blue: #b4daf3;
+    --light-blue:#c5ddec;
+    --blue: #63bff3;
+    --green: #5ae3b1;
+    --dark-gray: #1a1a1a;
+    --gray: #474646;
+    --white: #fff;
+    --off-white: #f6f6f6fe;
+}
+body {
+  font-family: 'Kalam', cursive;
+  margin: 0;
+  padding: 0;
+}
+/* start nav  */
+.navbar {
+  background-color: var(--dark-blue);
+}
+.navbar .navbar-brand {
+  color: var(--yellow);
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--beige);
+}
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--yellow);
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar svg {
+  color: var(--yellow);
+  font-size: 25px;
+  border-color: var(--yellow);
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--yellow);
+}
+.navbar ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul .icon{
+  color: var(--beige);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.navbar ul li .icon {
+  transition: 0.9s;
+}
+.navbar ul li:hover .icon{
+  transform: translateY(-15px);
+  color: var(--yellow);
+}
+.navbar ul li .text {
+  transition: 0.9s;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.navbar ul li:hover .text{
+  opacity: 1;
+  transform: translateY(15px);
+}
+.navbar ul li .btn .reg:hover{
+  color: var(--red);
+}
+/* end nav  */
+/* check availability form */
+.booking {
+  margin-top: -30px;
+  z-index: 2;
+  position: relative;
+  background-color: var(--off-white);
+  border-radius: 10px;
+}
+@media screen and (max-width: 575px){
+  .booking {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 991px){
+  .booking {
+    margin-top: -80px;
+  }
+}
+.booking h2  {
+  font-family: 'Merienda', cursive;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+.booking h6, .Testimonials h6 {
+  text-transform: capitalize;
+  color: var(--gray);
+  font-weight: bold;
+}
+.booking .form-booking input, 
+.booking .form-booking select {
+  background-color: var(--baby-blue);
+  border: var(--baby-blue);
+  color: var(--gray);
+  text-transform: uppercase;
+  width: 65%;
+  height: 35px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.booking .form-booking input:hover,
+.booking .form-booking input:focus,
+.booking .form-booking select:hover{
+  background-color: var(--green);
+  border-color: var(--green);
+  color: var(--white);
+}
+.booking .form-booking label{
+  color: var(--dark-gray);
+  text-transform: capitalize;
+  font-weight: bold;
+  width: 40%;
+}
+.booking .form-booking button{
+  margin-right: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 90px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+.booking .form-booking button:hover{
+  background-color: var(--hover-dark-blue);
+  color: var(--blue);
+}
+/* check availability form */
+/* start rooms */
+.Rooms{
+  background-color: var(--baby-blue);
+}
+.Rooms h2, 
+.facilities h2,
+.Testimonials h2,
+.reach-us h2 {
+  font-family: 'Merienda', cursive;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+}
+.Rooms .container .card{
+  max-width: 550px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+.Rooms .container .card:hover{
+  transform: scale(1.05);
+}
+.Rooms .container .card .card-body h4 ,
+.Rooms .container .card .card-body h5,
+.facilities h6,
+.Testimonials h6{
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+}
+.Rooms .container .card .card-body h4{
+  color: var(--blue);
+}
+.Rooms .container .card .card-body h5 {
+  font-size: medium;
+  color: var(--red);
+}
+.Rooms .container .card .card-body h6{
+  color: var(--gray);
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.Rooms .container .card .card-body span{
+  color: var(--gray);
+  font-size: 14px;
+}
+.Rooms .container .btn, 
+.facilities .container .btn {
+  color: var(--beige);
+  background-color: var(--dark-blue);
+  border-radius: 6px;
+  text-transform: capitalize;
+  border-color: var(--dark-blue);
+}
+.Rooms .container .btn:hover, 
+.facilities .container .btn:hover{
+  background-color: var(--hover-dark-blue);
+  border-color: var(--hover-dark-blue);
+  color: var(--blue);
+}
+/* start rooms */
+/* start facilities */
+#facil{
+  background-color: var(--off-white);
+}
+.facilities .icon{
+  font-size: 60px;
+  color: var(--yellow);
+}
+.facilities h6 {
+  font-size: 22px;
+  color: var(--gray);
+}
+.facilities .features{
+  background-color: var(--baby-blue);
+}
+.facilities .features:hover{
+  cursor:pointer;
+  transition: .8s;
+  transform: translateY(-15px);
+}
+/* end facilities */
+/* start Testimonials */
+.Testimonials {
+  background-color: var(--baby-blue);
+}
+.Testimonials .container .swiper-slide{
+  background-color: var(--off-white);
+}
+.Testimonials .container .swiper-slide .profile .icon{
+  font-size: 75px;
+  color: var(--green);
+}
+/* end Testimonials */
+/* start reach us */
+.reach-us {
+  background-color: var(--off-white);
+}
+.reach-us h4 {
+  font-family: 'Estonia', cursive;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+}
+.reach-us .map{
+  background-color: var(--green);
+}
+.reach-us .num,
+.reach-us .links{
+  background-color: var(--baby-blue);
+}
+.reach-us .icon{
+  font-size: 30px;
+}
+.reach-us a{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.reach-us i,.reach-us a{
+  color: var(--gray);
+  font-weight: bolder;
+}
+.reach-us i:hover,
+.reach-us a:hover{
+  color: var(--red);
+}
+.reach-us i:focus,
+.reach-us a:focus{
+  color: var(--green);
+}
+/* .reach-us a:visited,
+.reach-us i:visited{
+  color: var(--green);
+} */
+@media screen and (max-width: 700px){
+  .reach-us .icon{
+    font-size: 29px;
+  }
+  .reach-us a{
+    font-size: 19px;
+  }  
+}
+/* end reach us */
+/* start footer  */
+.footer{
+  background-color: var(--dark-blue);
+}
+.footer h4{
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+.footer h5{
+  font-family: 'Estonia', cursive;
+  color: var(--dark-gray);
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  cursor:no-drop;
+}
+.footer h5 span{
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.footer h5 span:hover{
+  color: var(--yellow);
+}
+.footer .discription,
+.footer .link {
+  color: var(--off-white);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 25px;
+}
+.footer .Follow{
+  color: var(--off-white);
+  text-transform:uppercase ;
+  letter-spacing: 4px;
+  line-height: 30px;
+}
+.footer .link:hover,
+.footer .Follow:hover{
+  color: var(--red);
+  font-size: larger;
+}
+.footer .Follow .icon{
+  font-size: 25px;
+}
+/* end footer  */

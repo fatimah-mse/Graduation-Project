@@ -1,0 +1,179 @@
+*:root{
+    --red: #ff4848;
+    --yellow: #ffca0f;
+    --beige: #f1e8cd;
+    --dark-blue: #1263a1;
+    --hover-dark-blue: #034980;
+    --baby-blue: #b4daf3;
+    --light-blue:#c5ddec;
+    --blue: #63bff3;
+    --green: #5ae3b1;
+    --dark-gray: #1a1a1a;
+    --gray: #474646;
+    --white: #fff;
+    --off-white: #f6f6f6fe;
+}
+.admin {
+    font-family: 'Kalam', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: var(--baby-blue);
+    min-height: 100vh;
+}
+/* start nav bar  */
+.admin .nav-bar{
+    background-color: var(--dark-blue);
+    overflow: hidden;
+}
+.admin .container-fluid .panel {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--yellow);
+}
+.admin .container-fluid .logout{
+    color: var(--beige);
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+}
+.admin .container-fluid .logout:focus,
+.admin .container-fluid .logout:hover{
+    color: var(--yellow);
+}
+/* end nav bar  */
+
+/* start side bar  */
+.admin .side-bar {
+    position: fixed;
+    background-color: var(--dark-blue);
+    border-top: 2px solid var(--baby-blue);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green);
+}
+.admin .side-bar h4 {
+    text-align: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: var(--green);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px dashed var(--green);
+}
+.admin .side-bar .nav-pills .nav-item{
+    transition: all .3s ease-in-out;
+}
+.admin .side-bar .nav-pills .nav-item:hover{
+    background-color: var(--light-blue);
+    border-radius: 5px;
+}
+.admin .side-bar .nav-pills .nav-item:hover a {
+    color: var(--dark-blue);
+}
+
+.admin .side-bar .nav-pills .nav-item a {
+    color: var(--off-white);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/* end side bar  */
+
+/* start main content settings*/
+/* General Settings */
+.admin .container-fluid .title {
+    font-family: 'Merienda', cursive;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.admin .container-fluid .card {
+    background-color: var(--off-white);
+}
+.admin .container-fluid .card .card-body .card-title {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-transform: capitalize;
+    color: var(--red);
+    font-weight: bold;
+    border-bottom: 1px dashed var(--red);
+}
+.admin .container-fluid .card .card-body .btn {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    background-color: var(--dark-blue);
+    color: var(--yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 35px;
+}
+.admin .container-fluid .card .card-body .btn:hover{
+    background-color: var(--hover-dark-blue);
+}
+.admin .container-fluid .card .card-body .btn .icon {
+    font-size: 20px;
+}
+.admin .container-fluid .card .card-body .card-subtitle{
+    text-transform: capitalize;
+    color: var(--dark-gray);
+    font-weight: bold;
+}
+.admin .container-fluid .card .card-body .card-text{
+    color: var(--gray);
+}
+.admin .container-fluid .fade .modal-dialog .modal-content .modal-header .modal-title {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.admin .container-fluid .fade .modal-dialog .modal-body label{
+    color: var(--dark-gray);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.admin .container-fluid .fade .modal-dialog .modal-body input,
+.admin .container-fluid .fade .modal-dialog .modal-body textarea{
+    background-color: var(--baby-blue);
+    color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+.admin .container-fluid .fade .modal-dialog .modal-footer .btn{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 30px;
+}
+.admin .container-fluid .fade .modal-dialog .modal-footer .cancel{
+    background-color: var(--green);
+    color: var(--dark-gray);
+}
+.admin .container-fluid .fade .modal-dialog .modal-footer .cancel:hover{
+    background-color: var(--red);
+}
+.admin .container-fluid .fade .modal-dialog .modal-footer .submit{
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+}
+.admin .container-fluid .fade .modal-dialog .modal-footer .submit:hover{
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+}
+/* contact details section */
+
+/* end main content settings*/
+
+@media screen and (min-width : 992px) {
+    .side-bar{
+        height: 100vh!important;
+    }
+}
+@media screen and (max-width : 576px) {
+    .side-bar{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width : 991px) {
+    .admin #main-content{
+        margin-top: 60px;
+    }
+}

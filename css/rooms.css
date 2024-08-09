@@ -1,0 +1,143 @@
+*:root{
+    --red: #ff4848;
+    --yellow: #ffca0f;
+    --beige: #f1e8cd;
+    --dark-blue: #1263a1;
+    --hover-dark-blue: #034980;
+    --baby-blue: #b4daf3;
+    --light-blue:#c5ddec;
+    --blue: #63bff3;
+    --green: #5ae3b1;
+    --dark-gray: #1a1a1a;
+    --gray: #474646;
+    --white: #fff;
+    --off-white: #f6f6f6fe;
+}
+body {
+  font-family: 'Kalam', cursive;
+  background-color: var(--off-white);
+  margin: 0;
+  padding: 0;
+}
+.title h2 {
+  font-family: 'Merienda', cursive;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+}
+.title .line {
+  width:200px;
+  margin: 0 auto;
+  height: 3.7px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+}
+.room {
+  background-color: var(--baby-blue);
+}
+.room .filters {
+  background-color: var(--off-white);
+  height: max-content;
+}
+.room .filters h4 , 
+.room .details .card h4{
+  font-family: 'Merienda', cursive;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+.room .filters .navbar {
+  background-color: inherit;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--dark-blue);
+}
+.room .filters .navbar h5, 
+.room .details .card h6{
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: var(--red);
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.room .filters .navbar .Border {
+  width: 100%;
+  border: 1px solid var(--dark-blue);
+  background-color: var(--baby-blue);
+}
+.room .filters .navbar .input{
+  border: var(--baby-blue);
+  color: var(--gray);
+  width: 65%;
+  height: 35px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.room .filters .navbar .form-lable{
+  color: var(--dark-gray);
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: medium;
+  width: 38%;
+}
+.room .filters .navbar .check{
+  width: 18px;
+}
+.room .filters .navbar .facil {
+  color: var(--dark-gray);
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: medium;
+  width: max-content;
+}
+.room .details .card{
+  background-color: var(--off-white);
+  transition: 0.6s ease-in-out;
+}
+.room .details .card:hover{
+  transform: scale(1.05);
+  border: 2px solid var(--red);
+}
+.room .details .disc1{
+  width: 100% inherit;
+  border-left: 1px solid var(--blue);
+  border-right: 1px solid var(--blue);
+}
+@media screen and (max-width:769px) {
+  .room .details .disc1{
+    border-left:none;
+    border-right:none;
+  }
+}
+.room .details .card span {
+  text-transform: capitalize;
+  font-size: small;
+  color: var(--gray);
+  font-weight: bold;
+  padding-right: 4px;
+}
+.room .details .disc2{
+  width: 100% inherit;
+  text-align: center;
+}
+.room .details .card .cost{
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: var(--blue);
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.room .details .card .cost:hover{
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+.room .details .disc2 .btn{
+  background-color: var(--dark-blue);
+  color: var(--off-white);
+}
+.room .details .disc2 .btn:hover{
+  background-color: var(--hover-dark-blue);
+  color: var(--blue);
+}

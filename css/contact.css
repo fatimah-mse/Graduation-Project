@@ -1,0 +1,119 @@
+*:root{
+    --red: #ff4848;
+    --yellow: #ffca0f;
+    --beige: #f1e8cd;
+    --dark-blue: #1263a1;
+    --hover-dark-blue: #034980;
+    --baby-blue: #b4daf3;
+    --light-blue:#c5ddec;
+    --blue: #63bff3;
+    --green: #5ae3b1;
+    --dark-gray: #1a1a1a;
+    --gray: #474646;
+    --white: #fff;
+    --off-white: #f6f6f6fe;
+}
+body {
+  font-family: 'Kalam', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: var(--off-white);
+}
+.title h2 {
+    font-family: 'Merienda', cursive;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+}
+.title .line {
+    width:200px;
+    margin: 0 auto;
+    height: 3.7px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+}
+.title .txt {
+    font-size: medium;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--dark-gray);
+}
+.contact {
+    background-color: var(--baby-blue);
+}
+.contact .container .map , 
+.contact .container .form{
+    background-color: var(--off-white);
+    height: max-content;
+}
+.contact .container .map h5,  
+.contact .container .form h5{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: var(--blue);
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.contact .container .map a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--gray);
+    font-weight: bold;
+}
+.contact .container .map a:hover{
+    color: var(--hover-dark-blue);
+    text-decoration: underline;
+}
+.contact .container .map .icon ,
+.contact .container .form .icon {
+    font-size: 25px;
+    color: var(--yellow);
+}
+.contact .container .form .icon {
+    font-size: 33px;
+}
+.contact .container .form input,
+.contact .container .form textarea{
+    font-family: 'Estonia', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    width: 75%;
+    border: none;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+@media screen and (max-width:575px) {
+    .contact .container .form input{
+        width: 85%;
+    }
+}
+@media screen and (max-width:575px) {
+    .contact .container .form textarea{
+        width: 85%;
+    }
+}
+@media screen and (min-width:991px) {
+    .contact .container .form input{
+        width: 85%;
+    }
+}
+@media screen and (min-width:991px) {
+    .contact .container .form textarea{
+        width: 85%;
+    }
+}
+.contact .container .form .reset {
+    width: 80px;
+}
+.contact .container .form .button{
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    border-radius: 20px;;
+}
+.contact .container .form .button:hover{
+    background-color: var(--hover-dark-blue);
+    color: var(--blue);
+}

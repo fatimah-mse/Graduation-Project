@@ -1,0 +1,70 @@
+*:root{
+    --red: #ff4848;
+    --yellow: #ffca0f;
+    --beige: #f1e8cd;
+    --dark-blue: #1263a1;
+    --hover-dark-blue: #034980;
+    --baby-blue: #b4daf3;
+    --light-blue:#c5ddec;
+    --blue: #63bff3;
+    --green: #5ae3b1;
+    --dark-gray: #1a1a1a;
+    --gray: #474646;
+    --white: #fff;
+    --off-white: #f6f6f6fe;
+}
+body {
+    font-family: 'Kalam', cursive;
+    margin: 0;
+    padding: 0;
+}
+/* facilities page  */
+.title{
+    background-color: var(--off-white);
+  }
+.title .line {
+    width:200px;
+    margin: 0 auto;
+    height: 3.7px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+}
+.title .txt {
+    font-size: medium;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--dark-gray);
+}
+.facil{
+    background-color: var(--baby-blue);
+}
+.facil .details{
+    border-top: 4px solid var(--dark-blue);
+    border-bottom: 4px solid var(--dark-blue);
+    transition: 0.8s ease-in-out;
+    background-color: var(--off-white);
+}
+.facil .details:hover{
+    transform: scale(1.15);
+    border-top-color:var(--yellow) ;
+    border-bottom-color:var(--yellow) ;
+    cursor: pointer;
+}
+.facil .details .icon{
+    font-size: 60px;
+    color: var(--yellow);
+}
+.facil .details h5 {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-transform: capitalize;
+    color: var(--dark-blue);
+    font-weight: bold;
+    text-align: center;
+}
+.facil .details:hover h5{
+    color: var(--yellow);
+}
+.facil .details p {
+    text-transform: capitalize;
+    color: var(--gray);
+}                                                 

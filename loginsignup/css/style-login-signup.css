@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box;
+}
+:root{
+    --red: #ff4848;
+    --yellow: #ffca0f;
+    --beige: #f1e8cd;
+    --dark-blue: #1263a1;
+    --hover-dark-blue: #034980;
+    --baby-blue: #b4daf3;
+    --light-blue:#c5ddec;
+    --blue: #63bff3;
+    --green: #5ae3b1;
+    --dark-gray: #1a1a1a;
+    --gray: #474646;
+    --white: #fff;
+    --off-white: #f6f6f6fe;
+}
+body {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--dark-blue);
+    
+}
+.container{
+    position: relative;
+}
+.container .sign-up , 
+.container .sign-in{
+    background-color: var(--off-white);
+    border-radius: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: absolute;
+    top: -340px;
+    overflow: hidden;
+    left: 4%;
+    right: 4%;
+}
+@media screen and (min-width: 991px){
+    .container .sign-up , 
+    .container .sign-in {
+        top: -210px;
+    }
+}
+.container .sign-up .intro , 
+.container .sign-in .intro {
+    height: 400px;
+    width: 670px;
+}
+.container .sign-up .form , 
+.container .sign-in .form {
+    height: 670px;
+    width: 670px;
+}
+@media screen and (min-width: 991px){
+    .container .sign-up .intro , 
+    .container .sign-in .intro {
+        height: 420px;
+        width: 440px;
+    }
+}
+@media screen and (min-width: 991px){
+    .container .sign-up .form , 
+    .container .sign-in .form {
+        height: 420px;
+        width: 600px;
+    }
+}
+@media screen and (max-width: 575px){
+    .container .sign-up .intro, 
+    .container .sign-in .intro{
+        height: 420px;
+        width: 600px;
+    }
+}
+@media screen and (max-width: 575px){
+    .container .sign-up .form, 
+    .container .sign-in .form{
+        height: 650px;
+        width: 600px;
+    }
+}
+@media screen and (max-width: 575px){
+    .container .sign-up , 
+    .container .sign-in {
+        top: -385px;
+        overflow: hidden;
+    }
+}
+.container .sign-up .intro, 
+.container .sign-in .intro{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.container .sign-up .intro{
+    background-image: url(../imgs/reg1.jpg);
+}
+.container .sign-in .intro{
+    background-image: url(../imgs/key1.jpg);
+}
+@media screen and (max-width: 991px){
+    .container .sign-up .intro, 
+    .container .sign-in .intro{
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+.container .sign-up .intro h3,
+.container .sign-in .intro h3{
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: max-content;
+    border-radius: 5px;
+}
+.container .sign-up .intro .disc,
+.container .sign-in .intro .disc{
+    color: var(--blue);
+    text-transform: capitalize;
+    font-weight: bolder;
+    width: 170px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 575px) {
+    .container .sign-up .intro .disc,
+    .container .sign-in .intro .disc{
+        width: 150px;
+    }
+}
+.container .sign-up .intro .link,
+.container .sign-in .intro .link{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: smaller;
+}
+@media screen and (min-width: 991px) {
+    .container .sign-up .intro .link,
+    .container .sign-in .intro .link{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .container .sign-up .intro .link,
+    .container .sign-in .intro .link{
+        width: 120px;
+    }
+}
+.container .sign-up .intro .link .btn,
+.container .sign-in .intro .link .btn{
+    background-color: var(--blue);
+    color: var(--gray);
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: 0.9s ;
+}
+@media screen and (min-width: 991px) {
+    .container .sign-up .intro .btn,
+    .container .sign-in .intro .btn{
+        width: 120px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .container .sign-up .intro .btn,
+    .container .sign-in .intro .btn{
+        width: 120px;
+    }
+}
+.container .sign-up .intro .link .btn:focus,
+.container .sign-up .intro .link .btn:hover,
+.container .sign-in .intro .link .btn:focus,
+.container .sign-in .intro .link .btn:hover{
+    transform: translateX(10px);
+    font-weight: bolder;
+}
+.container .sign-up .form h2,
+.container .sign-in .form h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--dark-blue);
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+.container .sign-up form .text,
+.container .sign-in form .text{
+    width: 75%;
+    border: none;
+    background-color: var(--baby-blue);
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+.container .sign-up form .text:hover,
+.container .sign-in form .text:hover{
+    background-color: var(--blue);
+}
+.container .sign-up form .icon,
+.container .sign-in form .icon{
+    color: var(--yellow);
+    font-size: 28px;
+}
+.container .sign-up form .icon:hover,
+.container .sign-in form .icon:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+.container .sign-up form .button,
+.container .sign-in form .button{
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+}
+.container .sign-up form .button:hover,
+.container .sign-in form .button:hover{
+    color: var(--blue);
+    background-color: var(--hover-dark-blue);
+}
+
+.wrapper.animate-signUp .sign-in {
+    transform: rotate(4deg);
+    animation: animateRotate .7s ease-in-out forwards;
+    animation-delay: .3s;
+}
+
+.wrapper.animate-signIn .sign-in {
+    animation: animateSignIn 1.5s ease-in-out forwards;
+}
+
+
+
+@keyframes animateSignIn {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0) rotate(4deg);
+    }
+}
+
+.wrapper .sign-up {
+    transform: rotate(4deg);
+}
+
+.wrapper.animate-signIn .sign-up {
+    animation: animateRotate .7s ease-in-out forwards;
+    animation-delay: .3s;
+}
+
+@keyframes animateRotate {
+    0% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        z-index: 1;
+    }
+}
+
+.wrapper.animate-signUp .sign-up {
+    animation: animateSignUp 1.5s ease-in-out forwards;
+}
+
+@keyframes animateSignUp {
+    0% {
+        transform: translateX(0);
+        z-index: 1;
+    }
+
+    50% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0) rotate(4deg);
+    }
+}
